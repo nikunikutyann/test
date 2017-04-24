@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tammy's homepage</title>
+    <link href="css/reset.css" type="text/css" rel="stylesheet"/>
+    <link href="css/index.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+    <div class="g-wrapper"><!--g-wrapper start-->
+        <header><!--header start-->
+            <nav>
+                <div class="logo">
+                    <a href="#">
+                        <img src="img/logo.jpg"/>
+                    </a>
+                </div>
+                <ul class="menu">
+                    <li>
+                        <a href="#" class="active">
+                            <span class="nav-text">Home</span>
+                        </a>
+                        <hr/>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="nav-text">Blog</span>
+                        </a>
+                        <hr/>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="nav-text">Work</span>
+                        </a>
+                        <hr/>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="nav-text">About Me</span>
+                        </a>
+                        <hr/>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="nav-text">Contact</span>
+                        </a>
+                        <hr/>
+                    </li>
+                </ul>
+            </nav>
+        </header><!--header end-->
+        <div class="hr" id="nav-hr"></div>
+        <div class="g-content" ><!-- g-content start -->
+            <div class="slider">
+                <!--0.view->template-->
+                <div class="main" id="slide_template_main">
+                    <div class="main-i" id="slide_main_{{index}}">
+                        <div class="caption">
+                            <h2>{{h2}}</h2>
+                            <h3>{{h3}}</h3>
+                        </div>
+                        <img src="img/{{index}}.jpg" class="slide_picture"/>
+                    </div>
+                </div>
+                <div class="ctrl" id="slide_template_ctrl">
+                    <a class="ctrl-i" href="javascript:switchSlider({{index}});" id="slide_ctrl_{{index}}">
+                        <img src="img/{{index}}.jpg"/>
+                    </a>
+                </div>
+            </div>
+            <div class="card-group">
+                <a href="#">
+                    <div class="card">
+                        <h2>Title1</h2>
+                        <p>This is content about this title1</p>
+                        <img src="//global01.mifile.cn/v1/MI_25943454643F6/T1Q7ZvBmDv1RXrhCrK.jpg"/>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <h2>Title1</h2>
+                        <p>This is content about this title1</p>
+                        <img src="//global01.mifile.cn/v1/MI_25943454643F6/T1Q7ZvBmDv1RXrhCrK.jpg"/>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <h2>Title1</h2>
+                        <p>This is content about this title1</p>
+                        <img src="//global01.mifile.cn/v1/MI_25943454643F6/T1Q7ZvBmDv1RXrhCrK.jpg"/>
+                    </div>
+                </a>
+            </div>
+        </div><!-- g-content end -->
+        <footer><!--footer start-->
+            <ul class="share-group">
+                <li>item1</li>
+                <li>item2</li>
+                <li>item3</li>
+                <li>item4</li>
+                <li>item5</li>
+            </ul>
+            <div class="copy">
+                &copy;Tammy - 2016. All Rights Reserved
+            </div>
+        </footer><!--footer end-->
+    </div><!--main wrapper end-->
+</body>
+</html>
